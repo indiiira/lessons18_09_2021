@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab3
+namespace Laboratorka3
 {
     struct BankInfo
     {
@@ -37,9 +37,9 @@ namespace lab3
             Console.WriteLine($"Name={Name} Univerity={university}");
         }
     }
-        class Program
-    { 
-       static void Main(string[] args)
+    class Program
+    {
+        static void Main(string[] args)
         {
             Console.WriteLine("Задание 1");
             Bank SavingCount = Bank.SavingCount;
@@ -56,16 +56,17 @@ namespace lab3
 
 
             Console.WriteLine("Домашнее задание 3.1");
-                Worker InfoAboutUniversity;//имя переменной
+            Worker InfoAboutUniversity;//имя переменной
             Console.WriteLine("Введите имя");
             InfoAboutUniversity.Name = Console.ReadLine();
             Console.WriteLine("Выберите вуз=КГУ(0),КАИ(1).КХТИ(2)");
-            int i=int.Parse(Console.ReadLine());
+            int i = int.Parse(Console.ReadLine());
             InfoAboutUniversity.university = (University)(i);
 
             InfoAboutUniversity.DisplayInfo();
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
+    
 

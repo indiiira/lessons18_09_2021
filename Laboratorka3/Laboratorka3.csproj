@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E336358B-3AF8-42A0-A7F6-81161DB18B94}</ProjectGuid>
+    <ProjectGuid>{CBFCCECD-E028-4B82-9C21-F1044ACBB6AE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HomeWork</RootNamespace>
-    <AssemblyName>HomeWork</AssemblyName>
+    <RootNamespace>Laboratorka3</RootNamespace>
+    <AssemblyName>Laboratorka3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
