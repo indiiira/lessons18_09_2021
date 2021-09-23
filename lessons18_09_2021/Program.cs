@@ -115,25 +115,25 @@ namespace PDFhomework
               A = true;
               B = false;
               C = false;
-              a = A ^ B;
+              a = A | B;
               b = A & B;
-              c = B ^ C;
+              c = B | C;
               Console.WriteLine($"{a}, {b}, {c}");
            
             Console.WriteLine("А1.10");
               for (int X = 0; X <= 1; X++)
                   for (int Y = 0; Y <= 1; Y++)
                       for (int Z = 0; Z <= 1; Z++)
-                         Console.WriteLine( $"a){!(Convert.ToBoolean(X) ^ Convert.ToBoolean(Y)) & (!Convert.ToBoolean(X) ^ !Convert.ToBoolean(Z))} {X} {Y} {Z}");
+                         Console.WriteLine( $"a){!(Convert.ToBoolean(X) | Convert.ToBoolean(Y)) & (!Convert.ToBoolean(X) | !Convert.ToBoolean(Z))} {X} {Y} {Z}");
 
               for (int X = 0; X <= 1; X++)
                 for (int Y = 0; Y <= 1; Y++)
                     for (int Z = 0; Z <= 1; Z++)
-                        Console.WriteLine($"б){!(!(Convert.ToBoolean(X)) & Convert.ToBoolean(Y)) ^ (Convert.ToBoolean(X) & !Convert.ToBoolean(Z))} {X} {Y} {Z}");
+                        Console.WriteLine($"б){!(!(Convert.ToBoolean(X)) & Convert.ToBoolean(Y)) | (Convert.ToBoolean(X) & !Convert.ToBoolean(Z))} {X} {Y} {Z}");
             for (int X = 0; X <= 1; X++)
                 for (int Y = 0; Y <= 1; Y++)
                     for (int Z = 0; Z <= 1; Z++)
-                        Console.WriteLine($"б){((Convert.ToBoolean(X)) ^ !(Convert.ToBoolean(Y))) & !(Convert.ToBoolean(X) ^ !Convert.ToBoolean(Z))} {X} {Y} {Z}");
+                        Console.WriteLine($"б){((Convert.ToBoolean(X)) | !(Convert.ToBoolean(Y))) & !(Convert.ToBoolean(X) | !Convert.ToBoolean(Z))} {X} {Y} {Z}");
           
             Console.ReadKey();
         }
